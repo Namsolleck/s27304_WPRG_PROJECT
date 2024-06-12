@@ -121,8 +121,36 @@ main .right .first .stats div h4{
     font-size: 3rem;
     font-weight: 500;
     letter-spacing: -0.3rem;
+    color: var(--lightBlackColor)
 }
 
+main .right .first .stats div span{
+    text-transform: lowercase;
+    font-size: var(--fs14);
+    color: var(--darkGreyColor);
+    letter-spacing: -0.1px;
+}
+
+main .right .first .buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+main .right .first .buttons .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    width: 100%;
+    padding: 2rem;
+    min-width: 8rem;
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+main .right .first .buttons .btn-red{
+    margin: 1.2rem 0;
+}
 @media(min-width: 649px){
     main .left .inner-left .box .img{
         display: block;
